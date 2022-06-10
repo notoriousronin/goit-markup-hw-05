@@ -55,7 +55,7 @@
           ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
           ДЛЯ ВАШЕГО БИЗНЕСА
         </h1>
-        <button type="button" class="button primary">Заказать услугу</button>
+        <button data-modal-open type="button" class="button primary">Заказать услугу</button>
       </section>
       <!--Качества-->
       <section class="section-first">
@@ -115,13 +115,22 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="images-list list">
             <li class="picture-item">
-              <img src="./images/logo2.jpg" alt="Набор текста на клавиатуре" width="370" />
+              <div class="image-thumb">
+                <img src="./images/logo2.jpg" alt="Набор текста на клавиатуре" width="370" />
+              </div>
             </li>
             <li class="picture-item">
-              <img src="./images/logo1.jpg" alt="Работа за компьютером" width="370" />
+              <div class="image-thumb">
+                <img src="./images/logo1.jpg" alt="Работа за компьютером" width="370" />
+                <div class="box-2">
+                  <h3 class="thumb-title">Мобильные приложения</h3>
+                </div>
+              </div>
             </li>
             <li class="picture-item">
-              <img src="./images/logo3.jpg" alt="Работа за планшетом" width="370" />
+              <div class="image-thumb">
+                <img src="./images/logo3.jpg" alt="Работа за планшетом" width="370" />
+              </div>
             </li>
           </ul>
         </div>
@@ -385,5 +394,17 @@
         </div>
       </div>
     </footer>
+    <!-- Модальное Окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="close-button">
+          <svg class="close-icon" width="18" heights="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Скрипт -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
