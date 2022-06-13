@@ -223,8 +223,8 @@ ul {
   margin-left: auto;
 }
 
-.contacts-list .header-contacts {
-  fill: var(--primary-text-color);
+.contacts-list {
+  color: var(--primary-text-color);
 }
 
 .contacts-list .item + .item {
@@ -233,7 +233,7 @@ ul {
 
 .contacts-list .header-contacts:hover,
 .contacts-list .header-contacts:focus {
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* Hero */
@@ -279,7 +279,7 @@ ul {
 
 .icon {
   margin-right: 10px;
-  align-self: center;
+  fill: currentColor;
 }
 
 .svg-main {
@@ -329,7 +329,7 @@ ul {
 }
 
 .team-text {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -485,13 +485,17 @@ ul {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  fill: #afb1b8;
+  color: #afb1b8;
+}
+
+.team-soc-icon {
+  fill: currentColor;
 }
 
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--accent-color);
-  fill: var(--header-bg-color);
+  color: var(--header-bg-color);
 }
 
 /* CLients */
@@ -517,7 +521,7 @@ ul {
   align-items: center;
   border-radius: 4px;
   border: 1px solid #afb1b8;
-  fill: #afb1b8;
+  color: #afb1b8;
 }
 
 .clients-link:hover {
@@ -527,6 +531,11 @@ ul {
 .clients-logo {
   width: 106px;
   height: 60px;
+  fill: currentColor;
+}
+
+.clients-logo:hover {
+  color: var(--accent-color);
 }
 
 .clients-link:hover {
@@ -551,6 +560,10 @@ ul {
   cursor: pointer;
   border-radius: 4px;
   padding: 10px 32px;
+}
+
+.button.primary:hover {
+  background: #188ce8;
 }
 
 /* Portfolio */
